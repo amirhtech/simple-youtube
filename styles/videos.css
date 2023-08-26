@@ -1,0 +1,176 @@
+.videos {
+    background-color: rgba(236, 236, 236, 0.3);
+    padding-top: 57px;
+    padding-left: 72px;
+}
+
+@media (min-width: 1200.02px) {
+    .videos {
+        padding-left: 201px;
+    }
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 600.02px) and (max-width: 900px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900.02px) and (max-width: 1250px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1250.02px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .video-container {
+        margin-bottom: 38px;
+    }
+}
+
+.thumbnail-container {
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-time {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px 4px;
+}
+
+.video-description {
+    display: flex;
+    margin-top: 10px;
+}
+
+.profile-container {
+    padding-right: 15px;
+}
+
+.div-for-profile-tooltip {
+    border-radius: 25px;
+    position: relative;
+}
+
+.profile-tooltip {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(73, 72, 72, 0.507);
+    position: absolute;
+    display: flex;
+    white-space: nowrap;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    bottom: -80px;
+}
+
+.profile-tooltip-image {
+    margin-right: 8px;
+}
+
+.tooltip-profile-photo {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.channel-owner {
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.sub-number {
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.div-for-profile-tooltip:hover .profile-tooltip {
+    opacity: 1;
+}
+
+.profile-photo {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.profile-description {
+    flex: 1;
+}
+
+.video-title {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    line-height: 20px;
+}
+
+.video-title-link {
+    color: black;
+    text-decoration: none;
+}
+
+.channel-name {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.channel-link {
+    text-decoration: none;
+}
+
+.video-view-date {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+
+@media (min-width: 1000px)  {
+    .video-title {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .channel-name, .video-view-date {
+        font-size: 14px;
+    }
+}
